@@ -1,0 +1,150 @@
+/*////// Mobile responsive first //////*/
+body {
+    background-color: #f9fafc;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal, 800;
+    overflow: hidden;
+}
+
+.navlist {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navlist a.btn {
+    display: block;
+    color: #69696a;
+    border: none;
+    border-radius: 30px;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.navlist a.btn:hover {
+    background-color: #000;
+    color: #f9fafc;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.main {
+    align-items: left;
+    margin-top: 8%;
+    padding: 0;
+}
+
+.box {
+    color: #696969;
+    width: auto;
+    border-left: 3px solid rgba(105,105,106,0.2);
+    padding: 0 15px;
+}
+
+#scroll {
+    margin: 0;
+}
+
+#scroll a.btn {
+    color: #69696a;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#scroll a.btn{
+    background-color: #000;
+    color: #f9fafc;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*////// media query for desktop responsive //////*/
+@media (min-width: 1030px){
+    body {
+        margin-left: 100px;
+    }
+
+
+    .header .hcontainer {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin-left: 60px;
+    }
+
+    .navlist {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        margin-right: 430px;
+        margin-top: 10px;
+    }
+
+    .navlist a.btn {
+        display: inline-flex;
+        padding: 10px 30px;
+    }
+
+    .navlist a.btn:hover {
+        padding: 10px 30px;
+    }
+
+    .main {
+        margin-left: 60px;
+        width: 38%;
+    }
+
+    .circle { 
+            position: absolute;
+            margin-left: 17%;
+            margin-top: -2%;
+        }
+        
+        .pink {
+            position: relative;
+            left: 640px;
+            bottom: 140px;
+            background-color: rgba(247,136,167,0.6);
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            display: inline-block;
+            z-index: -0.8;
+        }
+        
+        .purple {
+            position: relative;
+            left: 600px;
+            bottom: 250px;
+            background-color: rgba(207,130,213,0.6);
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            display: inline-block;
+            z-index: -0.3;
+        }
+        
+        .orange {
+            position: relative;
+            left: 370px;
+            bottom: 80px;
+            background-color: rgba(247,193,162,0.7);
+            height: 210px;
+            width: 210px;
+            border-radius: 50%;
+            display: inline-block;
+            z-index: 1;
+        }
+
+        #scroll {
+            position: absolute;
+            margin: 10% 38%;
+        }
+    }
