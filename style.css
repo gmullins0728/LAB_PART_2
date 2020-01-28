@@ -51,13 +51,7 @@ body {
 }
 
 #scroll a.btn {
-    color: #69696a;
     display: block;
-    text-decoration: none;
-    padding: 10px;
-}
-
-#scroll a.btn{
     background-color: #000;
     color: #f9fafc;
     border-radius: 30px;
